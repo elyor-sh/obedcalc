@@ -1,6 +1,6 @@
 import { FormModel, model } from "./model.ts";
 import { observer } from "mobx-react-lite";
-import { Fragment, ReactNode, useState } from "react";
+import {Fragment, ReactNode, useState} from 'react';
 import { Tooltip } from "antd";
 import {DollarOutlined, MinusCircleOutlined, MoonOutlined, SunOutlined} from '@ant-design/icons';
 import { Calculator } from "../calculator/calculator.tsx";
@@ -109,7 +109,7 @@ export const Table = observer(() => {
                               value={truncateNumber(model.serviceFeeSum[rowIdx])}
                               disabled
                               style={{
-                                color: 'brown'
+                                color: isDark ? "#e92f2f" : 'brown',
                               }}
                             />
                           </Border>
