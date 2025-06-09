@@ -1,0 +1,16 @@
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-8px) rotate(1deg); }
+    66% { transform: translateY(4px) rotate(-1deg); }
+}
+@keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 25px rgba(59, 130, 246, 0.8); }
+}
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.float-animation { animation: float 6s ease-in-out infinite; }
+.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
